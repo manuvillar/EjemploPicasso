@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
         binding = ActivityMainBinding.inflate(getLayoutInflater());
-        View view = binding.getRoot();
+        setContentView(binding.getRoot());
 
         cargarImagen("https://tubblog.co.uk/wp-content/uploads/2011/10/Android.png", binding.imagen1);
         cargarImagen("https://styles.redditmedia.com/t5_4k5f7g/styles/communityIcon_n99zahv20s581.png", binding.imagen2);
