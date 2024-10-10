@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        cargarImagen("https://tubblog.co.uk/wp-content/uploads/2011/10/Android.png", binding.imagen1);
-        cargarImagen("https://styles.redditmedia.com/t5_4k5f7g/styles/communityIcon_n99zahv20s581.png", binding.imagen2);
+        cargarImagen(getString(R.string.url1), binding.imagen1);
+        cargarImagen(getString(R.string.url2), binding.imagen2);
     }
 
     public void cargarImagen(String url, ImageView imageView) {
